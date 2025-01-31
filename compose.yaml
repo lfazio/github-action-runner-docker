@@ -1,0 +1,8 @@
+services:
+  github-action-runner:
+    build: .
+    environment:
+      USER: '<your_github_username>'
+      REPOSITORY: '<your_github_repository>'
+      ACCESS_TOKEN: '<your_github_action_runner_token>'
+    restart: always
